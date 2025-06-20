@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>The Document Object</h1>
+        <h2>The getElementByTagName() Method
+        </h2>
+        <p>An unordered list:
+        </p><br>
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+            <li>Cold drink</li>
+        </ul>
+        <p>The innerHTMLof the second li element is:</p>
+        <p id="demo"></p>
+        <script>
+            const collection = document.getElementsByTagName("*");
+            console.log(collection);
+            let text = ""
+            for (let i = 0;i < collection.length;i++){
+                text += collection[i].tagname + "<br>";
+            }
+            document.getElementById("demo").innerHTML = text;
+        </script>
+    </body>
+

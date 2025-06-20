@@ -1,0 +1,261 @@
+/* ========== GLOBAL STYLES ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f2f4f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ========== HEADER SECTION ========== */
+.header {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right, rgba(26, 41, 128, 0.6), rgba(38, 208, 206, 0.6)),
+                url('images/sport1.jpg') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
+    position: relative;
+    text-align: center;
+}
+
+.text-box {
+    max-width: 800px;
+    color: #fff;
+}
+
+.text-box h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.text-box p.about {
+    font-size: 1.125rem;
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    background: #ff4e50;
+    padding: 14px 36px;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+}
+
+.hero-btn:hover {
+    background: #f9d423;
+    color: #000;
+}
+
+/* ========== NAVIGATION BAR ========== */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 6%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(6px);
+}
+
+nav img {
+    width: 120px;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links ul li a:hover {
+    color: #ffcc00;
+}
+
+/* ========== IMAGES SECTION ========== */
+.images {
+    background: linear-gradient(to right, #ffe259, #ffa751);
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.images h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    font-family: 'Pacifico', cursive;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px #ff4e50;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+    padding: 0 5%;
+    justify-items: center;
+}
+
+.tooltip-container {
+    position: relative;
+    max-width: 240px;
+    width: 100%;
+}
+
+.tooltip-container img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tooltip-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+}
+
+.tooltip {
+    visibility: hidden;
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    position: absolute;
+    bottom: 105%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.tooltip-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* ========== MEMBERSHIP SECTION ========== */
+.background-plans {
+    background: url("pexels-tom-fisk-3448250.jpg") center/cover no-repeat;
+    padding: 80px 30px;
+    position: relative;
+}
+
+.plans-list h2 {
+    font-size: 2.5rem;
+    color: #ffdd00;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    text-shadow: 2px 2px #000;
+    margin-bottom: 50px;
+}
+
+.plans-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px;
+    padding: 0 5%;
+}
+
+.plan-1, .plan-2, .plan-3 {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    color: #fff;
+    transition: transform 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.plan-1:hover, .plan-2:hover, .plan-3:hover {
+    transform: translateY(-10px);
+}
+
+.plan-1 img, .plan-2 img, .plan-3 img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-bottom: 15px;
+}
+
+.plan-1 h1, .plan-2 h1, .plan-3 h1 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* ========== RESPONSIVE IMPROVEMENTS ========== */
+@media screen and (max-width: 768px) {
+    .nav-links ul {
+        flex-direction: column;
+        background: #000;
+        padding: 20px;
+        position: absolute;
+        right: 0;
+        top: 70px;
+        display: none;
+    }
+
+    .nav-links ul.active {
+        display: flex;
+    }
+
+    .text-box h1 {
+        font-size: 2rem;
+    }
+
+    .hero-btn {
+        padding: 12px 28px;
+    }
+}
+
+/* ========== MEMBER CORNER IMAGE ========== */
+.member {
+    position: absolute;
+    top: 60px;
+    right: 40px;
+    z-index: 10;
+}
+
+.member img {
+    width: 100px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.member img:hover {
+    transform: scale(1.1);
+}

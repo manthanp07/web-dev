@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="contact.css">
+    <style>
+
+        
+
+.header{
+    background-color: black;
+    width: 100%;
+    height: 100px;
+
+}
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: right;
+}
+
+nav img {
+    width: 150px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    margin: 13px 0px 0px 0px;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #b2e43d;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.logo{
+    width: 90px;
+    height: 90px;
+    margin: -25px 0px 0px -65px;
+    /* padding: 0px 0px 0px 0px; */
+}
+
+.form{
+    margin: 20px 18px 15px 17px;
+    
+}
+
+.head{
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+</style>
+</head>
+
+<body>
+    <div class="header">
+        <nav>
+            <a href="index.html"><img src="new-logo.png" class="logo"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="contact.html" >CONTACT US</a></li>
+                    <li><a href="payment.html" target="_blank">PAY<a></li>
+                    <li><a href="mailto:devanshmandhotra@gmail.com" target="_blank">MAIL US</a></li>
+                    <li><a href="signinlink.html" target="_blank">LOGIN/SIGN-UP</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- <div class="form">
+    <h3 class="head">Contact Form</h3> -->
+
+    <!-- <div class="container">
+        <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+
+            </select>
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</div> -->
+
+
+<div class="main">
+    <div class="con1"><h1 class="head1">Contact Us</h1></div>
+    <div class="con2"></div>
+
+
+    <div class="container">
+
+      <div class="side1">
+
+        <div class="place1">
+          <div class="in">
+            <div><img src="address.png.jpg" alt="img" class="log1"></div>
+            <div class="det1">Address</div>
+          </div>
+          <div class="txt"><p>Phoenix Sports Club Jalandhar, Punjab.</p></div>
+        </div> 
+
+        <div class="place2">
+          <div class="in">
+          <div><img src="phone.png.jpg" alt="img" class="log2"></div>
+          <div class="det2">Phone</div>
+        </div>
+          <div class="txt"><p>+91 999999999 <br> +91 99999999 <br> +91 999999999</p></div>
+        </div>
+
+        <div class="place3">
+          <div class="in">
+          <div><img src="email.png.jpg" alt="img" class="log3"></div>
+          <div class="det3">Email</div>
+        </div>  
+        <div class="txt">
+          <p> yournamehere@gmail.com</p></div>
+        
+
+      </div>
+    </div>
+
+
+      <div class="side2">
+        <form action="/action_page.php">
+          <label for="fname" class="big1">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+          <label for="lname" class="big1">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+          <label for="lemail" class="big1">Email</label>
+          <input type="email" id="lname" name="Email" placeholder="Enter email id">
+          
+
+          <label for="subject" class="big1">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    
+  </div>
+
+
+</body>
+
+</html>
